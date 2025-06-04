@@ -24,31 +24,11 @@
         </div>
     </nav>
 
-    <!-- Sección: Historia del colegio -->
-    <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-            <h2 class="text-3xl font-semibold mb-4">Nuestra Historia</h2>
-            <p class="text-lg text-gray-700">El Colegio Ejemplo fue fundado en el año 1985 con el objetivo de brindar una educación técnica de calidad. A lo largo de los años ha formado a cientos de profesionales en diferentes ramas de la tecnología, destacándose por su compromiso con la innovación y la excelencia educativa.</p>
-        </div>
-        <img src="imagenes/entrada.jpg" alt="Historia del colegio" class="rounded-xl shadow-lg">
-    </section>
+    @yield(".inicio")
 
-    <!-- Sección: Fotos del colegio -->
-    <section id="fotos" class="bg-white py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-semibold mb-8 text-center">Fotos del Colegio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <img src="/images/foto1.jpg" class="rounded-lg shadow-md" alt="Foto 1">
-                <img src="/images/foto2.jpg" class="rounded-lg shadow-md" alt="Foto 2">
-                <img src="/images/foto3.jpg" class="rounded-lg shadow-md" alt="Foto 3">
-            </div>
-        </div>
-    </section>
+    @yield(".especialidades")
 
-
-    @yield("especialidades")
-
-    @yield("novedades")
+    @yield(".novedades")
 
     <!-- Pie de página -->
     <footer class="bg-gray-800 text-white text-center py-6">
